@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container flex flex--center" role="main">
+    <div class="newsletter flex mw900">
+      <div class="newsletter__text-box flex flex--column" role="textbox">
+        <h1 class="newsletter__text-box-title color-ds-gray fw700 margin-b30px" role="heading">Stay Updated!</h1>
+        <p class="newsletter__text-box-content-info margin-b30px" role="contentinfo">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul class="newsletter__list margin-b30px" role="listbox">
+          <li class="newsletter__list-item flex" role="listitem">
+            <svg role="img" aria-label="check icon" class="newsletter__list-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>  
+            Product discovery and building what matters
+          </li>
+          <li class="newsletter__list-item flex" role="listitem">
+            <svg role="img" aria-label="check icon" class="newsletter__list-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            Measuring to ensure updates are a success
+          </li>
+          <li class="newsletter__list-item flex" role="listitem">
+            <svg role="img" aria-label="check icon" class="newsletter__list-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+            And much more!
+          </li>
+        </ul>
+
+        <form action="" class="form" id="form">
+          <div class="form__input-box">
+            <div class="form__label-box margin-b10px flex">
+              <label class="form__label color-ds-gray" for="email">Email Address</label>
+              <div id="form_error" class="form__error fw700"></div>
+            </div>
+            <input id="email" type="email" class="form__input margin-b20px" placeholder="email@company.com">
+          </div>
+
+          <button type="submit" class="btn form__btn fw700">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+
+      <div class="newsletter__img-box" role="img" aria-label="newsletter sign-up illustration">
+        <picture>
+          <source
+            srcset="/assets/images/illustration-sign-up-mobile.svg"
+            media="(max-width: 950px)"
+          >
+          <img src="/assets/images/illustration-sign-up-desktop.svg" alt="sign-up image illustration" class="newsletter__img">
+        </picture>
+      </div>
+    </div>
+  </div>
+
+  <div class="success-modal flex flex--column hidden" role="alertdialog" aria-label="success message">
+    <div class="success-modal__text-box">
+      <div class="success-modal__icon-box margin-b30px">
+        <img src="/assets/images/icon-success.svg" alt="">
+      </div>
+    
+      <h1 class="success-modal__title margin-b20px color-ds-gray fw700">Thanks for subscribing!</h1>
+      <p class="success-modal__content-info margin-b30px">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <button class="btn success-modal__btn fw700">Dismiss message</button>
+  </div>
+  <div class="overlay hidden"></div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="/script/script.js"></script>
+</body>
+</html>
